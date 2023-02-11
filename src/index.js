@@ -34,4 +34,5 @@ function verificationReceivedData(dataCountries) {
     Markup.creationMarkupCountries(dataCountries);
   } else
     Notify.info('Too many matches found. Please enter a more specific name.');
+  Markup.clearMarkup();
 }
