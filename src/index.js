@@ -32,7 +32,8 @@ function verificationReceivedData(dataCountries) {
     Markup.creationMarkupOneCountry(dataCountries[0]);
   else if (quantityCountries >= 2 && quantityCountries <= 10) {
     Markup.creationMarkupCountries(dataCountries);
-  } else
+  } else {
     Notify.info('Too many matches found. Please enter a more specific name.');
-  Markup.clearMarkup();
+    Markup.clearMarkup();
+  }
 }
